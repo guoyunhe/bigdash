@@ -10,7 +10,13 @@
     "lint": "rive lint",
     "format": "rive format"
   },
-  "keywords": [],
+  "keywords": [
+    "big.js",
+    "decimal",
+    "lodash",
+    "math",
+    "util"
+  ],
   "author": "",
   "license": "GPL-3.0",
   "module": "dist/index.mjs",
