@@ -1,6 +1,6 @@
 {
   "name": "bigdash",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "re-implement lodash math functions with big.js",
   "main": "dist/index.cjs",
   "scripts": {
