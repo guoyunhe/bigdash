@@ -1,6 +1,6 @@
 # Bigdash
 
-re-implement lodash number functions with big.js
+Re-implement lodash math functions with big.js.
 
 ## Why?
 
@@ -26,10 +26,58 @@ npm install --save bigdash
 
 ## Usage
 
+### add()
+
+```js
+import { add } from 'bigdash';
+
+add(0.1, 0.2); // 0.3
+```
+
+### divide()
+
+```js
+import { divide } from 'bigdash';
+
+divide(0.1, 0.2); // 0.5
+```
+
+### mean()
+
+```js
+import { mean } from 'bigdash';
+
+mean([0.1, 0.2]); // 0.15
+```
+
+### meanBy()
+
+```js
+import { meanBy } from 'bigdash';
+
+meanBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], 'foo.bar'); // 0.15
+
+meanBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], ['foo', 'bar']); // 0.15
+
+meanBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], (item) => item.foo.bar); // 0.15
+```
+
 ### sum()
 
 ```js
 import { sum } from 'bigdash';
 
 sum([0.1, 0.2]); // 0.3
+```
+
+### sumBy()
+
+```js
+import { sumBy } from 'bigdash';
+
+sumBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], 'foo.bar'); // 0.3
+
+sumBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], ['foo', 'bar']); // 0.3
+
+sumBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], (item) => item.foo.bar); // 0.3
 ```

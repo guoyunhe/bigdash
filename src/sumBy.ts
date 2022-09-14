@@ -1,15 +1,15 @@
 import { Big } from 'big.js';
-import { map, property } from 'lodash-es';
+import { getProp } from './getProp';
 
 export function sumBy<T>(
-  collection: ArrayLike<T> | null | undefined,
-  iteratee?: string | ((value: T) => number) | undefined
+  list: Array<T>,
+  iteratee?: string | string[] | ((value: T) => number) | undefined
 ): number {
   let result = new Big(0);
-  map(collection, (item) => {
+  list.forEach((item) => {
     let value;
-    if (typeof iteratee === 'string') {
-      value = property(iteratee)(item);
+    if (typeof iteratee === 'string' || Array.isArray(iteratee)) {
+      value = getProp(item, iteratee);
     } else if (typeof iteratee === 'function') {
       value = iteratee(item);
     }
