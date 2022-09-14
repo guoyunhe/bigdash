@@ -2,14 +2,6 @@
   "name": "bigdash",
   "version": "1.2.2",
   "description": "re-implement lodash math functions with big.js",
-  "main": "dist/index.cjs",
-  "scripts": {
-    "test": "rive test",
-    "start": "rive start",
-    "build": "rive build",
-    "lint": "rive lint",
-    "format": "rive format"
-  },
   "keywords": [
     "big.js",
     "decimal",
@@ -17,51 +9,43 @@
     "math",
     "util"
   ],
-  "author": "",
+  "author": "Guo Yunhe",
+  "homepage": "https://github.com/guoyunhe/bigdash#readme",
+  "repository": "git@github.com:guoyunhe/bigdash.git",
   "license": "GPL-3.0",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "rive test",
+    "start": "rive start",
+    "build": "rive build",
+    "lint": "rive lint",
+    "format": "rive format"
+  },
   "files": [
     "dist",
     "README.md",
     "CHANGELOG.md"
   ],
+  "dependencies": {
+    "big.js": "^6.2.1"
+  },
   "devDependencies": {
     "@types/big.js": "^6.1.6",
     "@types/jest": "^18.1.1",
-    "@types/react": "^18.0.20",
-    "@types/react-dom": "^18.0.6",
-    "jest": "^28.1.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "rive": "latest",
-    "ts-jest": "^28.0.8",
     "typescript": "^4.8.3"
   },
   "jest": {
     "preset": "rive"
   },
   "eslintConfig": {
-    "extends": [
-      "rive"
-    ]
+    "extends": "rive"
   },
   "eslintIgnore": [
     "node_modules",
     "coverage",
     "dist"
-  ],
-  "stylelint": {
-    "extends": [
-      "stylelint-config-rive"
-    ],
-    "ignoreFiles": [
-      "node_modules",
-      "coverage",
-      "dist"
-    ]
-  },
-  "dependencies": {
-    "big.js": "^6.2.1"
-  }
+  ]
 }
