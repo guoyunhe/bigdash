@@ -20,7 +20,6 @@
   "author": "",
   "license": "GPL-3.0",
   "module": "dist/index.mjs",
-  "style": "dist/index.css",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
