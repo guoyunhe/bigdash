@@ -70,6 +70,14 @@ import { multiply } from 'bigdash';
 multiply(0.1, 0.2); // 0.02
 ```
 
+### subtract()
+
+```js
+import { subtract } from 'bigdash';
+
+subtract(0.3, 0.2); // 0.1
+```
+
 ### sum()
 
 ```js

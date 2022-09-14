@@ -6,6 +6,7 @@
 - `mean()` function
 - `meanBy()` function
 - `multiply()` function
+- `subtract()` function
 - remove lodash-es dependency
 
 ## 1.1.0 - 2022-09-14
