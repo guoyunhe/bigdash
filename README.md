@@ -62,6 +62,14 @@ meanBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], ['foo', 'bar']); // 0.15
 meanBy([{ foo: { bar: 0.1 } }, { foo: { bar: 0.2 } }], (item) => item.foo.bar); // 0.15
 ```
 
+### multiply()
+
+```js
+import { multiply } from 'bigdash';
+
+multiply(0.1, 0.2); // 0.02
+```
+
 ### sum()
 
 ```js
