@@ -1,8 +1,9 @@
 # bigdash
 
-![npm](https://img.shields.io/npm/v/bigdash)
-![downloads](https://img.shields.io/npm/dw/bigdash)
-![minzipped size](https://img.shields.io/bundlephobia/minzip/bigdash)
+![Version](https://img.shields.io/npm/v/bigdash)
+![License](https://img.shields.io/npm/l/bigdash)
+![Downloads](https://img.shields.io/npm/dw/bigdash)
+![Bundle Size](https://img.shields.io/bundlephobia/minzip/bigdash)
 
 Re-implement lodash math functions with [big.js](https://github.com/MikeMcl/big.js).
 
