@@ -15,7 +15,7 @@
   },
   "repository": "git@github.com:guoyunhe/bigdash.git",
   "funding": "https://github.com/sponsors/guoyunhe",
-  "license": "LGPL-3.0",
+  "license": "MPL-2.0",
   "author": "Guo Yunhe",
   "sideEffects": false,
   "type": "module",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0 - 2025-07-12
+
+- feat: changed license to `MPL-2.0`
+
 ## 2.0.0 - 2025-07-12
 
 - feat!: updated `big.js` from 6.x to 7.x
