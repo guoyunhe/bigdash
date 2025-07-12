@@ -1,6 +1,6 @@
 {
   "name": "bigdash",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "re-implement lodash math functions with big.js",
   "keywords": [
     "big.js",
