@@ -2,8 +2,8 @@ import { Big } from 'big.js';
 import { getProp } from './getProp';
 
 export function sumBy<T>(
-  list: Array<T>,
-  iteratee?: string | string[] | ((value: T) => number) | undefined
+  list: T[],
+  iteratee?: string | string[] | ((value: T) => number) | undefined,
 ): number {
   let result = new Big(0);
   list.forEach((item) => {
